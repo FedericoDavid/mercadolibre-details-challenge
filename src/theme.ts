@@ -1,10 +1,11 @@
-import {extendTheme, theme} from "@chakra-ui/react";
+import { extendTheme, theme } from "@chakra-ui/react";
 
 export default extendTheme({
   styles: {
     global: {
       body: {
         color: "blackAlpha.900",
+        backgroundColor: "#EDEDED",
       },
     },
   },
@@ -42,14 +43,14 @@ export default extendTheme({
   components: {
     Link: {
       variants: {
-        unstyled: ({colorScheme = "blackAlpha"}) => ({
+        unstyled: ({ colorScheme = "blackAlpha" }) => ({
           color: `${colorScheme}.700`,
           _hover: {
             color: `${colorScheme}.800`,
             textDecoration: "none",
           },
         }),
-        color: ({colorScheme = "secondary"}) => ({
+        color: ({ colorScheme = "secondary" }) => ({
           color: `${colorScheme}.500`,
           _hover: {
             color: `${colorScheme}.600`,
@@ -68,7 +69,7 @@ export default extendTheme({
         },
       },
       variants: {
-        ghost: ({colorScheme = "secondary"}) => ({
+        ghost: ({ colorScheme = "secondary" }) => ({
           backgroundColor: `${colorScheme}.50`,
           ":hover, :focus": {
             backgroundColor: `${colorScheme}.100`,
@@ -82,16 +83,6 @@ export default extendTheme({
         focusBorderColor: "secondary.500",
       },
       variants: {
-        filled: {
-          field: {
-            borderRadius: "sm",
-            color: "blackAlpha.800",
-            backgroundColor: "white",
-            ":hover, :focus": {
-              backgroundColor: "white",
-            },
-          },
-        },
         outline: {
           field: {
             borderColor: "gray.300",
