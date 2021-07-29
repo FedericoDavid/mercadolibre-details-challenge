@@ -40,7 +40,6 @@ export const Navbar = () => {
               </Text>
             </Stack>
           </Stack>
-          {/* stack de abajo */}
           <Stack alignItems="baseline" direction="row" justifyContent="space-between">
             <Stack alignItems="baseline" direction="row" spacing={12}>
               <Stack alignItems="center" direction="row" spacing={0}>
